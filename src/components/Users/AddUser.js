@@ -41,7 +41,7 @@ const AddUser = (props) => {
         setError(null);
     }
   return (
-    <div>
+    <React.Fragment>
     {error && <Errormodal title={error.title} message={error.message} onConfirm={errorHandler}/>}
     <Card className={classes.input}>
       <form onSubmit={addUserHandler}>
@@ -52,7 +52,7 @@ const AddUser = (props) => {
         <Button type="sumbit">Add User</Button>
       </form>
     </Card>
-    </div>
+    </React.Fragment>
   );
 };
 
