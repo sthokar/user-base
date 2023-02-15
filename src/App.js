@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <AddUser onAddUser={addUserHandler}/>
-      <UsersList users={[]}/>
+      <UsersList users={usersList}/>
     </>
   );
 }
